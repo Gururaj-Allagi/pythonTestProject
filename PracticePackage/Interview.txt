@@ -1,0 +1,7 @@
+{"level":"info","ts":1594009439.9738061, "Username" : "Sanjit" "caller": "scheduler/handlers.go:176","msg":"955e3f21-c384-49c5-855c-4caab54ad4bb: 389f0f6cef584d5da38491aad350b91a: Updated state of [scanner=cyren] to [verdict=bulk] , Sanjit.paul@gmail.com Do_Not_Scan.  127.0.0.1}
+
+
+{"level":"info","ts":1594009439.9738061, Username : Sanjit "caller":"scheduler/handlers.go:176","msg":"955e3f21-c384-49c5-855c-4caab54ad4bb: 389f0f6cef584d5da38491aad350b91a: Updated state of [scanner=cyren] to [verdict=bulk] , Sanjit.paul@gmail.com Do_Not_Scan.  127.0.0.2}
+
+
+{"level":"info","ts":1594009439.9738061, Username : Sanjit 1"caller":"scheduler/handlers.go:176","msg":"955e3f21-c384-49c5-855c-4caab54ad4bb: 389f0f6cef584d5da38491aad350b91a: Updated state of [scanner=cyren] to [verdict=bulk] , Sanjit.paul1@gmail.com Do_Not_Scan.  127.0.0.1}

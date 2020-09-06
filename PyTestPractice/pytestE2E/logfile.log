@@ -1,0 +1,9 @@
+2020-08-17 15:34:33,719 : INFO : PyTestPractice.pytestE2E.BaseClass : Gururaj
+2020-08-17 15:34:33,719 : INFO : PyTestPractice.pytestE2E.BaseClass : Gururaj
+2020-08-17 15:34:33,719 : CRITICAL : PyTestPractice.pytestE2E.BaseClass : Allagi
+2020-08-17 15:38:10,634 : INFO : test_editProfile : Gururaj
+2020-08-17 15:38:10,634 : INFO : test_editProfile : Gururaj
+2020-08-17 15:38:10,634 : CRITICAL : test_editProfile : Allagi
+2020-08-17 15:40:03,439 : INFO : test_editProfile : Gururaj
+2020-08-17 15:40:03,440 : INFO : test_editProfile : Gururaj
+2020-08-17 15:40:03,440 : CRITICAL : test_editProfile : Allagi
