@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 3.2.2 (Python 3.8.6rc1 on win32)" generated="20210106 15:02:51.698" rpa="false">
+<suite id="s1" name="MongoDBConnect" source="F:\Python\AppViewX\MogoDBPractice\MongoDBConnect.robot">
+<test id="s1-t1" name="Get MongoDB Databases">
+<kw name="Connect To Mongodb" library="MongoDBLibrary">
+<doc>Loads pymongo and connects to the MongoDB host using parameters submitted.</doc>
+<arguments>
+<arg>${MDBHost}</arg>
+<arg>${MDBPort}</arg>
+</arguments>
+<status status="PASS" starttime="20210106 15:02:51.933" endtime="20210106 15:02:56.091"></status>
+</kw>
+<kw name="Get Mongodb Collections" library="MongoDBLibrary">
+<doc>Returns a list of all of the collections for the database you
+passed in on the connected MongoDB server.</doc>
+<arguments>
+<arg>sample_analytics</arg>
+</arguments>
+<assign>
+<var>${res}</var>
+</assign>
+<msg timestamp="20210106 15:02:56.682" level="INFO">${res} = ['customers', 'transactions', 'accounts']</msg>
+<status status="PASS" starttime="20210106 15:02:56.091" endtime="20210106 15:02:56.682"></status>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>\n${res}</arg>
+</arguments>
+<status status="PASS" starttime="20210106 15:02:56.682" endtime="20210106 15:02:56.682"></status>
+</kw>
+<kw name="Retrieve Some Mongodb Records" library="MongoDBLibrary">
+<doc>Retrieve some of the records from a given MongoDB database collection
+based on the JSON entered.
+Returned value must be single quoted for comparison, otherwise you will
+get a TypeError error.</doc>
+<arguments>
+<arg>sample_analytics</arg>
+<arg>accounts</arg>
+<arg>{"account_id": 371138}</arg>
+<arg>returnDocuments=False</arg>
+</arguments>
+<assign>
+<var>${res}</var>
+</assign>
+<msg timestamp="20210106 15:02:56.729" level="INFO">${res} = dict_items([('_id', ObjectId('5ca4bbc7a2dd94ee5816238c')), ('account_id', 371138), ('limit', 9000), ('products', ['Derivatives', 'InvestmentStock'])])</msg>
+<status status="PASS" starttime="20210106 15:02:56.682" endtime="20210106 15:02:56.729"></status>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>\n${res}</arg>
+</arguments>
+<status status="PASS" starttime="20210106 15:02:56.729" endtime="20210106 15:02:56.729"></status>
+</kw>
+<kw name="Disconnect-MongoDB">
+<tags>
+<tag>Dissconnect MongoDB connection</tag>
+</tags>
+<kw name="Disconnect From Mongodb" library="MongoDBLibrary">
+<doc>Disconnects from the MongoDB server.</doc>
+<status status="PASS" starttime="20210106 15:02:56.729" endtime="20210106 15:02:56.776"></status>
+</kw>
+<status status="PASS" starttime="20210106 15:02:56.729" endtime="20210106 15:02:56.776"></status>
+</kw>
+<status status="PASS" starttime="20210106 15:02:51.933" endtime="20210106 15:02:56.791" critical="yes"></status>
+</test>
+<test id="s1-t2" name="Connect MongoDB usin python resource">
+<kw name="test test">
+<msg timestamp="20210106 15:02:56.791" level="FAIL">No keyword with name 'test test' found.</msg>
+<status status="FAIL" starttime="20210106 15:02:56.791" endtime="20210106 15:02:56.791"></status>
+</kw>
+<status status="FAIL" starttime="20210106 15:02:56.791" endtime="20210106 15:02:56.791" critical="yes">No keyword with name 'test test' found.</status>
+</test>
+<status status="FAIL" starttime="20210106 15:02:51.698" endtime="20210106 15:02:56.791"></status>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="1">Critical Tests</stat>
+<stat pass="1" fail="1">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="1" id="s1" name="MongoDBConnect">MongoDBConnect</stat>
+</suite>
+</statistics>
+<errors>
+<msg timestamp="20210106 15:02:51.933" level="ERROR">Error in file 'F:\Python\AppViewX\MogoDBPractice\MongoDBConnect.robot' on line 5: Importing test library 'MongoPractice.testClass' failed: ModuleNotFoundError: No module named 'MongoPractice'
+Traceback (most recent call last):
+  None
+PYTHONPATH:
+  C:\Users\gsa94\AppData\Local\Programs\Python\Python38\Scripts\robot.exe
+  c:\users\gsa94\appdata\local\programs\python\python38\python38.zip
+  c:\users\gsa94\appdata\local\programs\python\python38\DLLs
+  c:\users\gsa94\appdata\local\programs\python\python38\lib
+  c:\users\gsa94\appdata\local\programs\python\python38
+  c:\users\gsa94\appdata\local\programs\python\python38\lib\site-packages</msg>
+</errors>
+</robot>

@@ -1,7 +1,3 @@
-import re
-
-str = "gsa943@gmail.com"
-
-r = re.search(r'.com\b', str)
-
-print(r.group())
+class testClass:
+    def test_test(self):
+        print("Guru")
